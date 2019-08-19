@@ -1,0 +1,222 @@
+/* Colors:
+Gunmetal        #293241 rgba(41, 50, 65, 1)
+Purple Navy     #3D5A80
+Pale Cerulean   #98C1D9
+Light Cyan      #E0FBFC
+Light Red Ochre #EE6C4D
+Mint Cream      #F6FDFE
+Eerie Black     #13171E 
+
+*/
+
+$gunmetal: #293241;
+$cyan: #E0FBFC;
+$navy: #3D5A80;
+$ochre: #EE6C4D;
+$cerulean: #98C1D9;
+$mint: #F6FDFE;
+$black: #13171E; 
+$shadow: 1px 1px 1px #000;
+$shadow-thin: 0.5px 0.5px 0.5px #000;
+//Fonts
+$headings: 'Playfair Display', serif;
+$body: 'Chivo', sans-serif;
+
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    height: 100vh;
+    margin: 0;
+    background-image: radial-gradient($gunmetal, $black);
+}
+
+body {
+    padding-top: 60px;
+}
+
+h1, h2, h3 {
+    font-family: $headings;
+}
+.full-height {
+    height: 100vh;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.position-ref {
+    position: relative;
+}
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.content {
+    text-align: center;
+}
+#masthead {
+    font-size: 82px;
+    color: #fff;
+    text-shadow: $shadow;
+    font-family: $headings;
+}
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $body;
+}
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.links > a {
+    color: #fff;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: $shadow-thin;
+    margin-left: 5px;
+}
+
+.links > a:hover {
+    border-bottom: 1.5px solid $ochre;
+}
+
+#bar {
+    color: $ochre
+}
+
+#topBar {
+    background-color: rgba(41, 50, 65, 1);
+}
+.navbar-brand {
+    font-family: $headings;
+    letter-spacing: .2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:$mint;
+    font-family: $body;
+    letter-spacing: .15rem;
+}
+.navbar-dark .navbar-nav .nav-link :hover {
+    border-bottom: 1px solid $ochre;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid rgba(255,255,255,1);
+}
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+    color: #fff;
+}
+ #blog-post {
+     background-color: #fff!important;
+ }
+
+ .sticky {
+     position: -webkit-sticky;
+     position: sticky;
+
+     padding: 0 15px;
+     padding-top: 50px;
+ }
+
+/*
+animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;  */
+
+  /**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ .text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  /**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+
+ .tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  //Form Styles
+  .form-group > label {
+      color: $mint;
+  }
+
+  .form-header {
+      color: $mint;
+  }
